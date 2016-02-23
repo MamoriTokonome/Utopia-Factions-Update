@@ -1,0 +1,18 @@
+players:
+  4e5850b7-055c-4cdb-ae58-d4b7ac5a4e04:
+    name: MamoriTokonome
+    mana: 25
+    knowledge:
+    - Fire Stone
+    - Unbreakable
+    - Hard Stuff
+    - See Through
+    - Thief
+  95514d5b-a837-4e70-976f-f730b6c836c4:
+    name: MireiShikishima
+altars: {}
+staffs:
+  '228622130':
+    '0': Lux-Radiare
+    '1': Arc-Pons
+    '2': Ignis-Pila
