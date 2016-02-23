@@ -1,0 +1,270 @@
+# 
+# These example files show you some of the basic attributes and
+# skills MythicMobs can use. Far more is possible!
+
+#Bosses
+SkeletonKing:
+  Type: WITHER_SKELETON
+  Display: '&6Skelly King'
+  Health: 500
+  Damage: 10
+  Skills:
+  - message{cooldown=20;m="<mob.name><&co> None may challenge the Skeleton King!"} @PlayersInRadius{r=40} ~onCombat >0 0.2
+  - message{m="<mob.name><&co> Ahahahahah! Die, <trigger.name>!"} @PlayersInRadius{r=40} ~onPlayerKill >0 1
+  - skill{s=SummonSkeletons} @Self 0.1
+  - skill{s=SmashAttack1} @Target >0 0.2
+  Equipment:
+  - KingsCrown:4
+  - SkeletonKingSword:0
+  Drops:
+  - SkeletonKingDrops
+  Options:
+    Despawn: true
+    AlwaysShowName: true
+    MovementSpeed: 0.2
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+Giant:
+  Type: GIANT
+  Health: 500
+  Damage: 75
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattacks
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  - 2 attackers
+  Equipment:
+  - Gshoes:1
+  - DChestplate:3
+  - BGSword:0
+  Drops:
+  - GiantDrops
+  Options:
+    Despawn: true
+    MovementSpeed: 0.2
+    FollowRange: 10
+    PreventOtherDrops: true
+  Skills:
+  - skill{s=SummonZombies} @self 1
+  - skill{s=SmashAttack2} @Target 0.2
+  - skill{s=ProtectionDefence2} 1
+KillerBunny:
+  Type: Rabbit
+  Display: 'The Killer Bunny'
+  Health: 40
+  Damage: 12
+  Drops:
+  - KillerBunnyDrops
+  Options:
+    Despawn: true
+    RabbitType: The_Killer_Bunny
+  Skills:
+  - skill{s=ProtectionDefence2} 1
+#Mini-Bosses
+#Works with boss Giant when I fix it Current Boss mob!
+ZombieKnight:
+  Type: ZOMBIE
+  Display: 'Zombie Knight'
+  Health: 200
+  Damage: 25
+  Equipment:
+  - Placeholder:4
+  - MamoriTokonome:0
+  Drops:
+  - ZombieKnightDrops
+  Options:
+    Despawn: true
+    AlwaysShowName: true
+    MovementSpeed: 0.2
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+LB:
+  Type: WITHER_SKELETON
+  Display: '&5Luigibaby'
+  Health: 200
+  Damage: 30
+  Equipment:
+  - Placeholder:4
+  Drops:
+  - LBDrops
+  Skills:
+  - skill{s=SmashAttack1} @Target >0 0.2
+  - skill{s=ProtectionDefence1} 1
+  Options:
+    Despawn: true
+    AlwaysShowName: false
+    PreventOtherDrops: true
+AngrySludge:
+  Type: SLIME
+  Display: Angry Sludge
+  Health: 200
+  Damage: 2
+  Options:
+    Despawn: true
+    Size: 20
+    MovementSpeed: 0.1
+    PreventSlimeSplit: true
+    PreventOtherDrops: true
+    MaxCombatDistance: 30
+    KnockbackResistance: 1
+  Skills:
+  - skill{s=AngrySludgePoison} 0.2
+#Hostial Mobs
+SkeletalKnight:
+  Type: SKELETON
+  Display: '&2Skeletal Knight'
+  Health: 40
+  Damage: 8
+  Drops:
+  - gold_nugget 2 0.5
+  DropsPerLevel:
+  - gold_nugget 1 0.5
+  LevelModifiers:
+  - health 5
+  - damage 0.5
+  Options:
+    Despawn: true
+    MovementSpeed: 0.1
+PoweredCreeper:
+  Type: Creeper
+  Health: 20
+  Damage: 97
+  Options:
+    Despawn: true
+    AlwaysShowName: true
+    SuperCharged: true
+  Skills:
+  - lightning @LivingInRadius{r=10} ~onTimer:100
+Creeper2:
+  Type: Creeper
+  Health: 20
+  Damage: 49
+  Options:
+    PreventSuicide: true
+MithrinDragon:
+  Type: ENDERMAN
+  Display: 'MithrinDragon'
+  Health: 20
+  Damage: 10
+  Equipment:
+  - Melon:0
+  Options:
+    Despawn: true
+    AlwaysShowName: true
+    PreventOtherDrops: true
+#Minions
+SkeletalMinion:
+  Type: SKELETON
+  Display: '&2Skeletal Minion'
+  Health: 30
+  Damage: 15
+  Options:
+    Despawn: true
+    MovementSpeed: 0.3
+  Skills:
+  - skill{s=ProtectionDefence2} 0.01
+ZombieMinion:
+  Type: ZOMBIE
+  Display: '&2Zombie Minion'
+  Health: 30
+  Damage: 20
+  Equipment:
+  - Placeholder:4
+  Options:
+    Despawn: true
+    MovementSpeed: 0.3
+  Skills:
+  - skill{s=ProtectionDefence2} 0.01
+#Passive Mobs
+Coosturd:
+  Type: PIG
+  Display: '&9Coosturd'
+  Health: 60
+  Damage: 2
+  Drops:
+  - CoosturdDrops
+  Options:
+    Despawn: true
+    MovementSpeed: 0.3
+    PreventOtherDrops: true
+  DamageModifiers:
+  - LIGHTNING 0
+  - FIRE 0.5
+  Skills:
+  - skill{s=CoosEffects} 1
+  - lightning @LivingInRadius{r=10} ~onTimer:100
+Jeb_:
+  Type: SHEEP
+  Display: 'jeb_'
+  Health: 20
+  Damage: 10
+  Options:
+    Despawn: true
+    AlwaysShowName: false
+    PreventOtherDrops: true
+Duck:
+  Type: CHICKEN
+  Display: 'Duck'
+  Health: 20
+  Damage: 0
+  Options:
+    Despawn: true
+    AlwaysShowName: false
+LC:
+  Type: BAT
+  Health: 10
+  Damage: 0
+  Drops:
+  - LCDrops
+  Options:
+    Despawn: true
+    AlwaysShowName: false
+    MovementSpeed: 0.03
+Rep:
+  Type: SQUID
+  Display: 'IRepptar'
+  Health: 1000
+  Damage: 0
+  Options:
+    Despawn: true
+Zombie2:
+  Type: ZOMBIE
+  Health: 20
+  Damage: 4
+  Equipment:
+  - Placeholder:4
+  - MamoriTokonome:0
+  Drops:
+  - Zombie2Drops
+  Options:
+    Despawn: true
+    PreventOtherDrops: true
+    MovementSpeed: 0.4
+  Skills:
+  - skill{s=ZombieSkill} 0.01
+Toast:
+  Type: Rabbit
+  Display: 'Toast'
+  Health: 10
+  Options:
+    Despawn: true
+    MovementSpeed: 0.3
+  Skills:
+  - skill{s=BunnySkill} 0.1
+YoungHorse:
+  Type: Horse
+  Health: 20
+  Options:
+    HorseColor: BLACK
+    HorseArmor: DIAMOND
+    MovementSpeed: 0.40
+Penguin:
+  Type: CHICKEN
+  Display: 'Penguin'
+  Health: 20
+  Damage: 0
+  Options:
+    Despawn: true
+    AlwaysShowName: false

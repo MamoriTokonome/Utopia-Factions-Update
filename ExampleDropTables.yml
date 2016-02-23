@@ -1,0 +1,54 @@
+# 
+# This example file shows you how to set up a basic drop table.
+# Drop tables can be used in both a mob's equipment and drops
+# to have multiple items tied to a single table.
+SkeletonKingDrops:
+  Conditions:
+  - playerwithin 40
+  Drops:
+  - KingsCrown 1 0.00001
+  - 371:0 32-64 1
+  - exp 100
+  DropsPerLevel:
+  - exp 10
+ZombieKnightDrops:
+  Conditions:
+  - playerwithin 40
+  Drops:
+  - MamoriTokonome 1 0.0025
+  - RedTulip 1 1
+  - exp 10
+  DropsPerLevel:
+  - exp 2
+CoosturdDrops:
+  Drops:
+  - CoosEgg 1 0.5
+  - RawCoosturdMeat 2 0.1
+  - CookedCoosturdMeat 2 0.1
+  - exp 2
+  DropsPerLevel:
+  - exp 2
+LCDrops:
+  Drops:
+  - SpeedFeather 0-1 0.05
+LBDrops:
+  Drops:
+  - LBBow 1 0.0009
+  - LBBones 0-3 1
+  - GoldIngot 0-2 0.005
+GiantDrops:
+  Drops:
+  - GShoes 0-1 0.00001
+  - RedTulip 0-1 1
+  - RottenFlesh 1-4 1
+  - GBSword 1 0.1
+  - DChestplate 1 0.1
+  - exp 100
+KillerBunnyDrops:
+  Drops:
+  - Melon 1 1
+Zombie2Drops:
+  Drops:
+  - GCD 1 0.0025
+  - NameTag2 1 0.01
+  - RottenFlesh 1 1

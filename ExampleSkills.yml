@@ -1,0 +1,79 @@
+# 
+# These example files show you some VERY basic meta skills.
+# You can copy and expand them however you'd like.
+SmashAttack1:
+  Cooldown: 8
+  Conditions:
+  - targetwithin 25
+  Skills:
+  - message{cooldown=30;m="<mob.name><&co> Hahahah! I will crush you, fool!"} @PlayersInRadius{r=40}
+  - teleport @target
+  - effect:sound{s=mob.endermen.portal;volume=1.0;pitch=0.5}
+  - delay 10
+  - damage{amount=5;ignorearmor=true} @PlayersInRadius{r=5}
+  - throw{velocity=10;velocityY=5} @PlayersInRadius{r=5}
+  - effect:explosion @Self
+SmashAttack2:
+  Cooldown: 8
+  Conditions:
+  - targetwithin 25
+  Skills:
+  - teleport @target
+  - effect:sound{s=mob.endermen.portal;volume=1.0;pitch=0.5}
+  - delay 10
+  - damage{amount=5;ignorearmor=true} @PlayersInRadius{r=5}
+  - throw{velocity=10;velocityY=5} @PlayersInRadius{r=5}
+  - effect:explosion @Self
+ProtectionDefence2:
+  cooldown: 8
+  Skills:
+  - effect:particlering{p=flame;amount=1000;hSpread=5;ySpread=1;speed=0;yOFfset=0.5}) @target
+  - delay 10
+  - potion{type=REGENERATION;lvl=0;duration=1000} @self
+  - delay 10
+  - potion{type=POISON;lvl=2;duration=0020} @PlayersInRadius{r=10}
+SummonZombies:
+  Cooldown: 10
+  Skills:
+  - delay 20
+  - summon{mob=ZombieMinion;amount=2;noise=5} @Self
+  - delay 20
+  - summon{mob=ZombieMinion;amount=2;noise=5} @Self
+  - delay 20
+  - summon{mob=ZombieMinion;amount=2;noise=5} @Self
+SummonSkeletons:
+  Cooldown: 15
+  Skills:
+  - message{m="<mob.name><&co> Arise, my minions!"} @PlayersInRadius{r=40}
+  - delay 20
+  - summon{mob=SkeletalMinion;amount=2;noise=5} @Self
+  - delay 20
+  - summon{mob=SkeletalMinion;amount=2;noise=5} @Self
+  - delay 20
+  - summon{mob=SkeletalMinion;amount=2;noise=5} @Self
+AngrySludgePoison:
+  Cooldown: 10
+  Skills:
+  - potion{type=POISON;lvl=3;duration=100} @PlayersInRadius{r=15}
+  - effect:particles{p=happyVillager;amount=1000;hSpread=15;ySpread=1;speed=0;yOFfset=0.5} @Self
+CoosEffects:
+  cooldown: 15
+  Skills:
+  #1255 is around 1:09
+  - potion{type=CONFUSION;lvl=2;duration=1255} @PlayersInRadius{r=10}
+  - delay 20
+  - effect:explosion @Self
+ProtectionDefence1:
+  cooldown: 8
+  Skills:
+  - message{cooldown=30;m="<mob.name><&co> Hahahah! there is no escape now!"} @PlayersInRadius{r=10}
+  - effect:particlering{p=flame;amount=1000;hSpread=5;ySpread=1;speed=0;yOFfset=0.5}) @target
+  - delay 10
+  - potion{type=REGENERATION;lvl=0;duration=1000} @self
+  - delay 10
+  - potion{type=POISON;lvl=2;duration=100} @PlayersInRadius{r=10}
+ZombieSkill:
+  - potion{type=POISON;lvl=1;duration=100} @PlayersInRadius{r=10}
+  - potion{type=SLOW;lvl=2;duration=1000} @PlayersInRadius{r=10}
+BunnySkill:
+  - potion{type=JUMP;lvl=1;duration=1000} @Self

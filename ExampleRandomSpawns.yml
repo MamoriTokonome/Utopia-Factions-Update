@@ -1,0 +1,139 @@
+# 
+# These example files show you how to inject Mythic Mobs
+# you've created into your world. The name of each block
+# can be whatever you'd like but must be unique.
+
+#Bosses
+RandomSkeletonKing:
+  MobType: SkeletonKing
+  Worlds: Factions
+  Chance: 0.0001
+  Priority: 1
+  Action: replace
+  Conditions:
+  - outside true
+  - lightlevel 0-5
+RandomGiant:
+  MobType: Giant
+  Worlds: Factions
+  Chance: 0.0001
+  Priority: 1
+  Action: replace
+  Conditions:
+  - outside true
+  - lightlevel 0-5
+#Hostile Mobs
+RandomSkeletalKnight:
+  MobType: SkeletalKnight
+  Worlds: Factions
+  Chance: 0.0008
+  Priority: 1
+  Action: add
+  Conditions:
+  - outside true
+  - lightlevel 0-8
+#Mini-Bosses
+RandomZombieKnight:
+  MobType: ZombieKnight
+  Worlds: Factions
+  Chance: 0.0005
+  Priority: 1
+  Action: add
+  Conditions:
+  - outside true
+  - lightlevel 0-8
+RandomLB:
+  MobType: LB
+  Worlds: Factions
+  Chance: 0.0005
+  Priority: 1
+  Action: add
+  Conditions:
+  - outside true
+  - lightlevel 0-8
+#Passive Mobs
+RandomCoosturd:
+  MobType: Coosturd
+  Worlds: Factions
+  Chance: 0.001
+  Priority: 1
+  Action: add
+  Conditions:
+  - outside true
+  - biome PLAINS
+  - raining true
+  - sunny false
+  - thundering true
+Randomjeb_:
+  MobType: Jeb_
+  Worlds: Factions
+  Chance: 0.0001
+  Priority: 1
+  Action: add
+  Conditions:
+  - outside true
+  - lunarphase 0
+  - lightlevel 0-8
+RandomLC:
+  MobType: LC
+  Worlds: Factions
+  Chance: 0.001
+  Priority: 1
+  Action: add
+  Conditions:
+  - level 0-63
+  - lightlevel 0-3
+RandomDuck:
+  MobType: Duck
+  Worlds: Factions
+  Chance: 0.1
+  Priority: 1
+  Action: add
+RandomPoweredCreeper:
+  MobType: PoweredCreeper
+  Worlds: Factions
+  Chance: 0.005
+  Priority: 1
+  Action: add
+  Conditions:
+  - raining true
+  - sunny false
+  - thundering true
+  - lunarphase 0
+  - lightlevel 0-8
+RandomCreeper2:
+  MobType: Creeper2
+  Worlds: Factions
+  Chance: 0.1
+  Priority: 1
+  Action: add
+RandomZombie2:
+  MobType: Zombie2
+  Worlds: Factions
+  Chance: 0.1
+  Priority: 1
+  Action: add
+RandomToast:
+  MobType: Toast
+  Worlds: Factions
+  Chance: 0.1
+  Priority: 1
+  Action: add
+  Conditions:
+  - biome FOREST
+RandomYoungHorse:
+  MobType: YoungHorse
+  Worlds: Factions
+  Chance: 0.5
+  Priority: 1
+  Action: add
+  Conditions:
+  - biome FOREST
+RandomPenguin:
+  MobType: Penguin
+  Worlds: Factions
+  Chance: 0.5
+  Priority: 1
+  Action: add
+  Conditions:
+  - biome ICE_PLAINS

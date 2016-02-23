@@ -1,0 +1,487 @@
+# 
+# This example file shows you how to set up special items
+# for your mobs to equip or drop.
+#Skelly King stuff
+SkeletonKingSword:
+  Id: 276
+  Data: 0
+  Display: '&3Greatsword of the Skeleton King'
+  Lore:
+  - '&5A powerful sword used by'
+  - '&5the King of Skeletons.'
+  - '&6&oLegendary'
+  Enchantments:
+  - DAMAGE_ALL:5
+  - KNOCKBACK:2
+  - FIRE_ASPECT:2
+  Options:
+    Health: 10
+    MovementSpeed: 0.1
+KingsCrown:
+  Id: 314
+  Data: 0
+  Amount: 1
+  Display: '&dCrown of the King'
+  Lore:
+  - '&5A kingly crowl that grants'
+  - '&5the wearer unwavering power!'
+  - '&9&oRare'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:2
+  - PROTECTION_PROJECTILE:2
+  - PROTECTION_FIRE:2
+  - PROTECTION_EXPLOSIONS:2
+  Options:
+    Health: 10
+    KnockbackResistance: 10
+BanditTunic:
+  Id: 299
+  Display: '&aBandit Tunic'
+  Lore:
+  - '&6A leather tunic taken from'
+  - '&6the corpse of a bandit.'
+  - '&9&oRare'
+  Options:
+    Color: 255,40,40
+#Coosturd Drops
+RawCoosturdMeat:
+  Id: 365
+  Data: 0
+  Display: '&fRaw CoosturdMeat?'
+  Lore:
+  - '&5Little raw...'
+  - '&7&oCommon?'
+CookedCoosturdMeat:
+  Id: 366
+  Data: 0
+  Display: '&fCooked CoosturdMeat?'
+  Lore:
+  - '&5Looks like Coosturd set'
+  - '&5to much fire to the wind...'
+  - '&7&oCommon?'
+CoosEgg:
+  Id: 344
+  Display: '&fEgg?'
+  Data: 0
+  Lore:
+  - '&5...How?...'
+  - '&7&oI do not know anymore...'
+  
+#Zombie Knight Drops
+MamoriTokonome:
+  Id: 283
+  Data: 0
+  Display: '&3Mamori Tokonome'
+  Lore:
+  - '&5Drive Mode'
+  - '&9&oRare'
+  Enchantments:
+  - DAMAGE_ALL:2
+  - FIRE_ASPECT:2
+  - DURABILITY:10
+  - LOOT_BONUS_MOBS:2
+  Options:
+    Health: 1
+    MovementSpeed: 0.2
+RedTulip:
+  Id: 38
+  Data: 4
+  Display: '&fRed Tulip'
+  Lore:
+  - '&5Great, a useless item!'
+  - '&7&oCommon'
+#MithrinDragon Drops
+
+#jeb_ Drops
+
+#LC Drops
+SpeedFeather:
+  Id: 288
+  Data: 0
+  Amount: 1
+  Display: 'Lightning Feather'
+  Lore:
+  - '&5 I Feel Really Fast'
+  - '&2&oUncommon'
+  Options:
+   MovementSpeed: 0.05
+#LB Drops
+LBBow:
+  Id: 261
+  Data: 230
+  Amount: 1
+  Display: 'Luigi Bow'
+  Lore:
+  - '&5Bow Form The Old Days!'
+  - '&9&oRare'
+  Enchantments:
+  - ARROW_KNOCKBACK:2
+  Options:
+   MovementSpeed: 0.04
+LBBones:
+  Id: 352
+  Data: 0
+  Amount: 1
+  Lore:
+  - '&5Great, a useless item!'
+  - '&7&oCommon'
+GoldIngot:
+  Id: 266
+  Data: 0
+  Amount: 1
+  Display: 'Golden Ingot'
+  Lore:
+  - '&5Great, An Enchanted Useless Item!'
+  - '&2&oUncommon'
+  Enchantments:
+  - PROTECTION_FALL:10
+#Giant Drops
+#Legendary Drop
+Gshoes:
+  Id: 313
+  Data: 200
+  Amount: 1
+  Display: 'Giant Shoes'
+  Lore:
+  - '&5These Are Some Big Shoes...'
+  - '&6&oLegendary'
+  Enchantments:
+  - PROTECTION_FIRE:10
+  - DURABILITY:10
+  - DEPTH_STRIDER:2
+  - PROTECTION_FALL:10
+  Options:
+   Health: 4
+   MovementSpeed: 0.05
+#Boss Drop
+BGSword:
+  Id: 283
+  Data: 0
+  Amount: 1
+  Display: '&eBiggoron Sword'
+  Lore:
+  - '&5It Is So Big And Heavy...'
+  - '&8&oBoss Item'
+  Enchantments:
+   - DAMAGE_ALL:10
+  Options:
+   Health: -4
+   MovementSpeed: -2
+DChestplate:
+  Id: 311
+  Data: 320
+  Amount: 1
+  Display: 'Giant Tunic'
+  Lore:
+  - '&5Its Very Protective'
+  - '&8&oBoss Item'
+  Enchantments:
+   - DURABILITY:3
+  Options:
+   Health: 16
+   MovementSpeed: -0.25
+#Zombie2Drops
+GCD:
+  Id: 260
+  Data: 0
+  Amount: 1
+  Display: '&5Golden Coated Diamond'
+  Lore:
+  - '&5Not What I Expected...'
+  - '&9&oRare'
+NameTag2:
+  Id: 421
+  Data: 0
+  Amount: 1
+  Lore:
+  - '&2&oUncommon'
+#KIller rabbit drops
+Jump:
+  Id: 373
+  Data: 8267
+  Amount: 1
+  Lore:
+  - '&9&oRare'
+#Common Drop
+RottenFlesh:
+  Id: 367
+  Data: 0
+  Amount: 1
+  Lore:
+  - '&5Ew'
+  - '&7&oCommon'
+####WIP###
+##Next Faction Update##
+F-Blade:
+  Id: 276
+  Data: 0
+  Amount: 1
+  Display: 'Fosters F-Blade'
+  Lore:
+  - '&5Blade of Great Power'
+  - '&9&oRare'
+  Enchantments:
+  - DURABILITY:3
+  - DAMAGE_ALL:5
+  - LOOT_BONUS_MOBS:3
+  - FIRE_ASPECT:2
+  Options:
+   Damage: 12
+   Health: -15
+   MovementSpeed: 0.20
+MetaMace:
+  Id: 284
+  Data: 0
+  Amount: 1
+  Display: 'Meta Mace'
+  Lore:
+  - '&5Its a mace.. In Minecraft'
+  - '&9&oRare'
+  Enchantments:
+  - DURABILITY:3
+  - DAMAGE_ALL:5
+  - LOOT_BONUS_MOBS:3
+  Options:
+   Damage: 12
+   Health: -15
+   MovementSpeed: -0.20
+####WIP###
+#Cursded Items
+##Next Faction Update##
+CWSword:
+  Id: 268
+  Data: 0
+  Amount: 1
+  Display: '&4Wooden Sword'
+  Lore:
+  - '&5This has a Dark Presents'
+  - '&4&o&lCursed'
+  Enchantments:
+   - DAMAGE_ALL:-10
+  Options:
+   Damage: 4
+   Health: -18
+   MovementSpeed: -0.70
+CSSword:
+  Id: 272
+  Data: 0
+  Amount: 1
+  Display: '&4Stone Sword'
+  Lore:
+  - '&5This has a Dark Presents'
+  - '&4&o&lCursed'
+  Enchantments:
+   - DAMAGE_ALL:-10
+   - LOOT_BONUS_MOBS:-10
+  Options:
+   Damage: 5
+   Health: -18
+   MovementSpeed: -0.70
+CGSword:
+  Id: 283
+  Data: 0
+  Amount: 1
+  Display: '&4Golden Sword'
+  Lore:
+  - '&5This has a Dark Presents'
+  - '&4&o&lCursed'
+  Enchantments:
+   - DAMAGE_ALL:-10
+   - LOOT_BONUS_MOBS:-10
+   - FIRE_ASPECT:-10
+  Options:
+   Damage: 4
+   Health: -18
+   MovementSpeed: -0.70
+CISword:
+  Id: 267
+  Data: 0
+  Amount: 1
+  Display: '&4Iron Sword'
+  Lore:
+  - '&5This has a Dark Presents'
+  - '&4&o&lCursed'
+  Enchantments:
+   - DAMAGE_ALL:-10
+   - LOOT_BONUS_MOBS:-10
+   - FIRE_ASPECT:-10
+   - THORNS:-10
+  Options:
+   Damage: 6
+   Health: -18
+   MovementSpeed: -0.70
+CDSword:
+  Id: 276
+  Data: 0
+  Amount: 1
+  Display: '&4Diamond Sword'
+  Lore:
+  - '&5This has a Dark Presents'
+  - '&4&o&lCursed'
+  Enchantments:
+   - DAMAGE_ALL:-10
+   - LOOT_BONUS_MOBS:-10
+   - FIRE_ASPECT:-10
+   - THORNS:-10
+   - DURABILITY:-10
+  Options:
+   Damage: 7
+   Health: -18
+   MovementSpeed: -0.70
+CBow:
+  Id: 261
+  Data: 0
+  Amount: 1
+  Display: '&4Bow'
+  Lore:
+  - '&5This has a Dark Presents'
+  - '&4&o&lCursed'
+  Enchantments:
+   - ARROW_FIRE:-1
+   - ARROW_INFINITE:-10
+   - DURABILITY:-10
+  Options:
+   Health: -18
+   MovementSpeed: -0.70
+#Blessed
+##Next Faction Update##
+GWSword:
+  Id: 268
+  Data: 0
+  Amount: 1
+  Display: '&2Wooden Sword'
+  Lore:
+  - '&5Claric Blessed This!'
+  - '&a&o&lBlessed'
+  Enchantments:
+   - DAMAGE_ALL:10
+  Options:
+   Damage: 4
+   Health: 5
+   MovementSpeed: 0.15
+GSSword:
+  Id: 272
+  Data: 0
+  Amount: 1
+  Display: '&2Stone Sword'
+  Lore:
+  - '&5Claric Blessed This!'
+  - '&a&o&lBlessed'
+  Enchantments:
+   - DAMAGE_ALL:10
+   - LOOT_BONUS_MOBS:10
+  Options:
+   Damage: 5
+   Health: 5
+   MovementSpeed: 0.15
+GGSword:
+  Id: 283
+  Data: 0
+  Amount: 1
+  Display: '&2Golden Sword'
+  Lore:
+  - '&5Claric Blessed This!'
+  - '&a&o&lBlessed'
+  Enchantments:
+   - DAMAGE_ALL:10
+   - LOOT_BONUS_MOBS:10
+   - FIRE_ASPECT:10
+  Options:
+   Damage: 4
+   Health: 5
+   MovementSpeed: 0.15
+GISword:
+  Id: 267
+  Data: 0
+  Amount: 1
+  Display: '&2Iron Sword'
+  Lore:
+  - '&5Claric Blessed This!'
+  - '&a&o&lBlessed'
+  Enchantments:
+   - DAMAGE_ALL:10
+   - LOOT_BONUS_MOBS:10
+   - FIRE_ASPECT:10
+   - THORNS:10
+  Options:
+   Damage: 6
+   Health: 5
+   MovementSpeed: 0.15
+GDSword:
+  Id: 276
+  Data: 0
+  Amount: 1
+  Display: '&2Diamond Sword'
+  Lore:
+  - '&5Claric Blessed This!'
+  - '&a&o&lBlessed'
+  Enchantments:
+   - DAMAGE_ALL:10
+   - LOOT_BONUS_MOBS:10
+   - FIRE_ASPECT:10
+   - THORNS:10
+   - DURABILITY:10
+  Options:
+   Damage: 7
+   Health: 5
+   MovementSpeed: 0.15
+GBow:
+  Id: 261
+  Data: 0
+  Amount: 1
+  Display: '&2Bow'
+  Lore:
+  - '&5Claric Blessed This!'
+  - '&a&o&lBlessed'
+  Enchantments:
+   - ARROW_FIRE:1
+   - ARROW_INFINITE:10
+   - DURABILITY:10
+  Options:
+   Health: 5
+   MovementSpeed: 0.15
+#place for all mobs if needed also for testing DO NOT REMOVE ITS IN USE! WELL NEVER BE ABLE TO GET IN GAME!
+Placeholder:
+  Id: 302
+  Data: 0
+  Amount: 1
+  Display: '&b&kPlaceholder'
+  Lore:
+  - '&5 You will never see this in game =D'
+  - '&5 Unless you cheat it in, then you are a cheater.'
+  - '&b&k Development Item!'
+Melon:
+  Id: 103
+  Data: 0
+  Amount: 1
+  Display: '&b&kPlaceholder'
+  Lore:
+  - '&5 You will never see this in game =D'
+  - '&5 Unless you cheat it in, then you are a cheater.'
+  - '&b&k Development Item!'
+Test:
+  Id: 277
+  Data: 0
+  Amount: 1
+  Display: '&b&kPlaceholder'
+  Lore:
+  - '&5 You will never see this in game =D'
+  - '&5 Unless you cheat it in, then you are a cheater.'
+  - '&b&k Development Item!'
+  Options:
+   Health: -10
+Debug:
+  Id: 277
+  Data: 0
+  Amount: 1
+  Display: '&bDebugger'
+  Lore:
+  - '&5Debug tool very strong and very useful!'
+  - '&5Make sure god mode is on or in creative!'
+  - '&b&k Development Item!'
+  Enchantments:
+  - DURABILITY:1000
+  - DIG_SPEED:10
+  Options:
+   MovementSpeed: 0.80
+   Health: -18
